@@ -30,19 +30,19 @@ function NowTime() {
     // 컴포넌트가 소멸될 때 타이머를 정리 --> clearInterval(대상 타이머)
 
     return (
-        <>
-            <div >
-                <h1>현재 시간</h1>
+        <div className='time'>
+            <div>
+                <h1 style={{color: 'white'}}>현재 시간</h1>
             </div>
-            <div style={border}>
-                <p>
+            <div>
+                <p style={{color: 'white'}}>
                     {now.toLocaleDateString()}
                 </p>
-                <p>
+                <p style={{color: 'white'}}>
                     {now.toLocaleTimeString()}
                 </p>
             </div>
-        </>
+        </div>
     );
 }
 export default NowTime;
