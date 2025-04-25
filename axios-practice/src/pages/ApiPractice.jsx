@@ -3,7 +3,8 @@ import { Outlet } from 'react-router-dom';
 
 const apiMenu = [
     {pathName: '/api', text: '고양이 보기'},
-    {pathName: '/api/dog', text: '강아지 보기'}
+    {pathName: '/api/dog', text: '강아지 보기'},
+    {pathName: '/api/my', text: 'My API'}
 ];
 
 function ApiPractice() {
