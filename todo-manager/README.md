@@ -9,3 +9,7 @@
 
 ## 프로젝트 실행
  > npm run dev
+
+## dependency
++ react-router-dom 라이브러리 추가 (25-04-28)
++ axios 라이브러리 추가 (25-04-30)
