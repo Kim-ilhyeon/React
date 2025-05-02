@@ -13,3 +13,4 @@
 ## dependency
 + react-router-dom 라이브러리 추가 (25-04-28)
 + axios 라이브러리 추가 (25-04-30)
++ react-toastify (25-05-02)

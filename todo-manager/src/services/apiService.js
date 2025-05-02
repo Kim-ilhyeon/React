@@ -17,4 +17,21 @@ export const verifyEmail = async (code, email) => {
     } else {
         
     }
+
+}
+
+export const checkId = async (id) => {
+    const response = await apiAxios.post('/checkId', {id: id});
+    // status : 통신 상태코드, data : 응답 데이터
+    return response.data;
+}
+
+// export const registUser = async (id, pwd, nickname, email) => {
+//     const response = await apiAxios.post('/user/regist', {id: id, pwd: pwd, nickname: nickname, email: email});
+//     return response.data;
+// }
+
+export const registUser = async (user) => {
+    const response = await apiAxios.post('/user/regist', user);
+    return response.data;
 }

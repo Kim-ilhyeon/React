@@ -6,6 +6,7 @@ import Login from './components/Login'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import SignUp from './components/SignUp'
 import TodoList from './components/TodoList'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
               <Route path='/todoList' element={<TodoList />} />
             </Routes>
           </BrowserRouter>
+          <ToastContainer />
       </div>
     </div>
   )
