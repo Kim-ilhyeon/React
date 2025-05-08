@@ -9,16 +9,18 @@ import TodoList from './components/TodoList'
 import { ToastContainer } from 'react-toastify'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLogin, setIsLogin] = useState(() => {
+    return !!localStorage.getItem("logined");
+  });
 
   return (
     <div style={{margin: '0 0'}}>
       <div>
           <BrowserRouter>
             <Routes>
-              <Route path='/' element={<Login />} />
+              <Route path='/' element={isLogin ? <TodoList /> : <Login setIsLogin={setIsLogin} />} />
               <Route path='/signUp' element={<SignUp />} />
-              <Route path='/todoList' element={<TodoList />} />
+              {/* <Route path='/todoList' element={<TodoList />} /> */}
             </Routes>
           </BrowserRouter>
           <ToastContainer />

@@ -35,3 +35,11 @@ export const registUser = async (user) => {
     const response = await apiAxios.post('/user/regist', user);
     return response.data;
 }
+
+export const loginUser = async (id, pwd) => {
+    console.log(id);
+    console.log(pwd);
+    const response = await apiAxios.post('/login', {userId: id, userPwd: pwd});
+    return response.data;
+}
+
