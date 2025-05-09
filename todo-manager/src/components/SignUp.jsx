@@ -63,7 +63,7 @@ function SignUp() {
             alert("먼저 나오나 테스트");
             successAlert("회원가입 성공!!.");
             // 로그인 페이지로 이동!!
-            navigate('/');
+            // navigate('/');
         } else if (result === 'failed') {
             errorAlert("회원가입 실패ㅠㅜ.");
         }
